@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.bulb {
+    width: 50px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 25px;
+    margin: 10px;
+    position: relative;
+}
+.bulb.on {
+    background-color: yellow;
+}
+.checkbox {
+    margin-top: 10px;
+}
+</style>
