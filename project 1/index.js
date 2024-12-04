@@ -10,15 +10,29 @@ startbutton.addEventListener("click",function(){
 })
 submit.addEventListener("click",function(){
     const value = numberinput.value;
-    console.log(value);
     
     for(i=0;i<value;i++)
         {
             const img=document.createElement('img');
-            img.src="offblub.png";
-            console.log(img);
+            img.src="1.png";
             img.style.width = "100px"; 
             img.style.margin = "5px";
+
+            img.addEventListener("click", function() {
+                // console.log(img.src);
+                
+                if(img.src.includes("1.png")) {
+                    img.src = "2.png"; 
+                }
+                else if(img.src.includes("2.png")) {
+                    img.src = "1.png"; 
+                }   
+            });
             imageContainer.appendChild(img); 
+            submit.style.display="none";
+            numberinput.style.display="none";
         }
-    })
+})
+
+
+
